@@ -22,26 +22,22 @@ The dataset has the following features:
 - ST_Slope: the slope of the peak exercise ST segment [Up: upsloping, Flat: flat, Down: downsloping]
 - HeartDisease: output class [1: heart disease, 0: Normal]
 
-We started by evlauating anomolalies such as zero values for HR and clean the data.
-
-Next we selected features which may help predicted heart-disease by looking at their correlation cofficient
-
-We will then  train the model on the training set and evalutae on the validation set. 
-
-To train the model on all the features together, we scale the data and then use k-NN model to train.
-
-We further refine the model through hyperparameter tuning before testing the model on the test set.
-
+1.We started by evlauating anomolalies such as zero values for HR and clean the data.
+2.Next we selected features which may help predicted heart-disease by looking at their correlation cofficient
+3.We then train the model on the training set and evalutae on the validation set. 
+4.To train the model on all the features together, we scales the data and then used k-NN model to train.
+5.We further refined the model through hyperparameter tuning before testing the model on the test set.
 
 Our final model was trained using the following features:
-
 - Oldpeak
 - Sex_M
 - ExerciseAngina_Y
 - ST_Slope_Flat
 - ST_Slope_Up
 
-and had a test set accuracy of 86.96%. There are a few things we can try to get better results:
+and produced a test set accuracy of 86.96%. 
+
+There are a few things we can try to get better results:
 
 1. Explore what would happen if gender wasnt a feature to train on
 2. What would happen on a different data set with more geneder balance or only men or women
