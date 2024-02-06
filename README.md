@@ -41,5 +41,5 @@ There are a few things we can try to get better results:
 
 1. Explore what would happen if gender wasnt a feature to train on
 2. What would happen on a different data set with more geneder balance or only men or women
-3. Try different features
+3. Try additional features
 4. Explore other algorithms that might perform better than k-NN.
